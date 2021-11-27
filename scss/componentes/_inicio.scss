@@ -1,0 +1,114 @@
+
+#inicio {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    color: white;
+
+    /*fondo*/
+    background-image: url("../src/fotos/neon.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*textos*/
+    h1 {
+        padding-top: 100px;
+        @include h-text (10, white);
+        word-wrap:break-word;
+    }
+
+    h4 {
+        font-size: $size *1.7; 
+    }
+}
+
+header {
+    @include espacios(0 0 20px 0,20px );
+    @include sticky (0%);
+    z-index: 4;
+    background-color: white;
+
+    .menu {
+        @include flex-row (space-around);
+        flex-wrap: wrap;
+
+        
+        /*botones*/
+        .boton1 {
+            border: black solid 2px;
+        }
+
+        .boton2 {
+            background-color: black;
+
+            a{
+            color: white;
+            }
+        }
+
+        .boton2, .boton1, svg {
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+
+        .negro a, .negro:hover a {
+            color: black;
+        }
+
+        .con-fondo, .sin-fondo {
+            display: inline-block;
+            border-radius: $size *4 ;
+            @include tamaño ($size *15, $size *4.5);
+            margin: $size *0.2
+        }
+
+        .con-fondo:hover, .sublista li:hover {
+            background-color: rgba(180, 180, 180, 0.171);
+        }
+
+        li {
+            @extend %text-decoration;
+            @include display(inline-block, relative );
+            padding-top: 7px;
+
+            &:hover ul {
+                display: block;
+            }
+
+            a {
+                font-size: $size *2;
+                text-decoration: none
+            }
+
+            svg {
+                @extend %text-decoration ;
+                padding-top: 7px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            /*sublista*/
+            .sublista {
+                @include display(absolute, none);
+                @include espacios (6px 0 0 0, 0px);
+                width: 150px;
+                text-align: start;
+                background-color: white;
+
+                li {
+                    font-size: $size *2;
+                    padding: $size;
+                    width: 100%;
+                    color: black;
+                }
+            }
+        }  
+
+    } 
+}
+

@@ -1,0 +1,20 @@
+#pre-footer {
+    @include background (block, "../src/fotos/fondo-pre-footer.jpeg" );
+    padding: 250px 0px;
+
+    .item-pf {
+        display: flex;
+        flex-direction: column;
+        
+        h2 {
+            display: inline;
+            @include h-text (6, white);
+        }
+
+        button {
+            margin:0 auto;
+            display: inline;
+        }
+    }
+    
+}

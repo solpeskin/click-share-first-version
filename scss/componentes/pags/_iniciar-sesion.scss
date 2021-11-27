@@ -1,0 +1,75 @@
+.is {
+    text-align: center;
+    @include background (block, "../src/fotos/pool-party.jpeg" );
+
+    h1{
+        font-size: $size *5;
+        margin: 20px auto 0px auto;
+        color: white;
+    }
+
+    p {
+        &:hover {
+            text-decoration: underline;
+        }
+        a{
+            color: white;
+            font-size: $size *1.5;
+            margin: 10px 0px 6px 0;
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover {
+                color: nth($colores, 4 );
+            }
+
+        }
+    }
+
+    svg {
+        @include flex-row (flex-start);
+        margin: 50px;
+        fill: white;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        input {
+            margin: 10px 0 30px 0;
+        }
+
+        .escribir {
+            border: solid #FF6DB7 1px;
+            background-color: white;
+            text-align: start;
+            @include tamaño (350px, 40px);
+            font-size: $size *1.5;
+            padding: 10px;
+        }
+    }
+}
+
+// fondo registrarse 
+.r {
+    margin: 0px;
+    @include background (block, "../src/fotos/pool-party-2.jpeg")
+}
+
+.boton { //no me tomaba el scss de los botones en general para estos botones
+    color: nth($colores, 2);
+    font-size: $size *2;
+
+    &:hover {        
+        color: nth($colores, 3);
+        
+    }
+}

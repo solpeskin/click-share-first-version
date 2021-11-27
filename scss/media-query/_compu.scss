@@ -1,0 +1,45 @@
+@media screen and (min-width: 961px) {
+    
+    #pasos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        div {
+            @include sticky (53.5%);
+            div {
+                @include tamaño (33.3%, 368.8px);
+            }  
+        }
+        
+
+        .row1 {
+            @include flex-row (center);
+        }
+
+        .row3 {
+            @include flex-row (space-between);
+        }
+    }
+
+    #ustedes {
+        .conteiners {
+            padding: 40px;
+
+            div {
+                @include sticky (50%);
+                width: 30%;
+            }
+
+            .conteiner1 {
+                margin-top: 700px;
+            }
+            .conteiner2 {
+                margin: auto;
+            }
+            .conteiner3 {
+                margin-left: 70%;
+            }
+        }
+    }
+}

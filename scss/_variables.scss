@@ -1,0 +1,73 @@
+/*generales*/
+
+// variables 
+$size: 10px;
+$colores:
+#ff8ec6, 
+#FF5DA2,
+#FF0075,
+#b81a5e,
+;
+
+// mixins 
+@mixin tamaño ($num, $num2) {
+    width: $num;
+    height: $num2;
+}
+
+@mixin espacios ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin sticky ($top) {
+    position: sticky;
+    top: $top;
+}
+
+@mixin h-text ($sizeH, $colorH) {
+    font-size: $size * $sizeH; 
+    text-align: center;
+    color: $colorH;
+}
+
+@mixin background ($d, $bgr) {
+    display: $d;
+    background-size: cover;
+    background-image: url($bgr);
+    background-repeat: no-repeat;
+}
+
+@mixin flex-row ($justify){
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+}
+
+
+// extensiones 
+%text-decoration {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+// páginas específicas 
+// inicio 
+@mixin display ($p, $d) { /*display y position para sublista*/
+    position: $p;
+    display: $d;
+}
+
+// pasos
+@mixin size-font ($num){
+    font-size: $size *$num;
+}
+
+@mixin cuadrados ($color){
+    background-color:($color);
+    display: inline;
+    float: left;
+}
+
+// mobile 
