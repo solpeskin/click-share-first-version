@@ -43,14 +43,6 @@
             h5 {
                 font-size: $size *3;
             }
-
-            button {
-                background-color: nth($colores, 3 );
-
-                a {
-                    color: white;
-                }
-            }
         }   
     }
 
@@ -63,8 +55,12 @@
         }
 
         div div {
-            @include sticky (50%);
+            
             @include tamaño (100%, 368.8px); 
+        }
+
+        div, div div {
+            @include sticky (50%);
         }
 
         .row1, .row3 {
@@ -75,14 +71,15 @@
    // ustedes
     #ustedes {
         .conteiners {
+            .conteiner1, .conteiner2 {
+                padding-bottom: 150px;
+            }
+
             div {
                 @include sticky (50%);
                 height: 190px;
                 margin: 30px;
-
-                .conteiner1, .conteiner2 {
-                    margin-bottom: 130px;
-                }
+                
 
                 .gente {
                     margin-left: 70px;

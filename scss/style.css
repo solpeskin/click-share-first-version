@@ -586,21 +586,20 @@ footer .texts div ul .ic-mobile {
   #nosotros div h5, #nosotros div h5 {
     font-size: 30px;
   }
-  #nosotros div button, #nosotros div button {
-    background-color: #FF0075;
-  }
-  #nosotros div button a, #nosotros div button a {
-    color: white;
-  }
   #pasos h2 {
     font-size: 60px;
   }
   #pasos div div {
+    width: 100%;
+    height: 368.8px;
+  }
+  #pasos div, #pasos div div {
     position: -webkit-sticky;
     position: sticky;
     top: 50%;
-    width: 100%;
-    height: 368.8px;
+  }
+  #ustedes .conteiners .conteiner1, #ustedes .conteiners .conteiner2 {
+    padding-bottom: 150px;
   }
   #ustedes .conteiners div {
     position: -webkit-sticky;
@@ -608,9 +607,6 @@ footer .texts div ul .ic-mobile {
     top: 50%;
     height: 190px;
     margin: 30px;
-  }
-  #ustedes .conteiners div .conteiner1, #ustedes .conteiners div .conteiner2 {
-    margin-bottom: 130px;
   }
   #ustedes .conteiners div .gente {
     margin-left: 70px;
@@ -694,6 +690,33 @@ footer .texts div ul .ic-mobile {
   }
   #ustedes .conteiners .conteiner3 {
     margin-left: 70%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 961px) and (min-width: 500px) and (max-width: 663px) {
+  #inicio h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 961px) {
+  #pasos .row1 div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    width: 50%;
+    height: 368.8px;
+  }
+  #ustedes h2 {
+    padding-bottom: 150px;
+  }
+  #ustedes .conteiners {
+    padding: 10px 60px;
+  }
+  #ustedes .conteiners div {
+    margin: 100px 0px;
+    height: 350px;
+    padding-bottom: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
