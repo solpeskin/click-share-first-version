@@ -344,12 +344,12 @@ footer {
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
   grid-gap: 30px;
-  padding: 70px;
   width: 100%;
   background-color: white;
 }
 
 footer .comments {
+  padding: 70px;
   text-align: start;
 }
 
@@ -399,6 +399,8 @@ footer .comments h4 {
 }
 
 footer .texts {
+  padding: 70px 0px 70px 70px;
+  margin-right: 70px;
   grid-area: "text";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,6 +627,21 @@ footer .texts div ul .ic-mobile {
 @media screen and (max-width: 500px) {
   #pre-footer .item-pf h2 {
     font-size: 50px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .comments {
+    margin-bottom: 30px;
+  }
+  footer .texts div {
+    margin: 0px;
   }
 }
 

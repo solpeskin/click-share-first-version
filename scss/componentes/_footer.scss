@@ -3,11 +3,11 @@ footer {
     grid-template-rows: 100px;
     grid-template-columns: repeat(2, 50%);
     grid-gap: 30px;
-    padding: 70px;
     width: 100%;
     background-color: white;
 
     .comments {
+        padding: 70px;
         text-align: start;
         
         .enviar {
@@ -44,6 +44,8 @@ footer {
     }
 
     .texts {
+        padding: 70px 0px 70px 70px;
+        margin-right: 70px;
         grid-area: "text";
         @include flex-row (end);
         text-align: start;

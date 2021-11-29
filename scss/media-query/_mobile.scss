@@ -55,7 +55,6 @@
         }
 
         div div {
-            
             @include tamaño (100%, 368.8px); 
         }
 
@@ -102,6 +101,22 @@
         .item-pf {
             h2 {
                 font-size: $size *5;
+            }
+        }
+    }
+
+    // footer 
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .comments {
+            margin-bottom: 30px;
+        }
+
+        .texts {
+            div {
+                margin: 0px;
             }
         }
     }
