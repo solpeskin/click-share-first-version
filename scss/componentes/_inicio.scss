@@ -106,11 +106,6 @@ header {
                     width: 100%;
                     color: black;
                 }
-<<<<<<< Updated upstream
-            }
-        }  
-=======
-    
                 /*sublista*/
                 .sublista {
                     @include display(absolute, none);
@@ -129,8 +124,5 @@ header {
     
         } 
     }
->>>>>>> Stashed changes
-
-    } 
 }
 
