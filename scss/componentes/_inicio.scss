@@ -106,8 +106,30 @@ header {
                     width: 100%;
                     color: black;
                 }
+<<<<<<< Updated upstream
             }
         }  
+=======
+    
+                /*sublista*/
+                .sublista {
+                    @include display(absolute, none);
+                    @include espacios (6px 0 0 0, 0px);
+                    text-align: start;
+                    background-color: white;
+    
+                    li {
+                        font-size: $size *2;
+                        padding: $size;
+                        width: 100%;
+                        color: black;
+                    }
+                }
+            }  
+    
+        } 
+    }
+>>>>>>> Stashed changes
 
     } 
 }

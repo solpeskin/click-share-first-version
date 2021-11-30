@@ -341,7 +341,7 @@ footer {
   display: grid;
   -ms-grid-rows: 100px;
       grid-template-rows: 100px;
-  -ms-grid-columns: (50%)[2];
+  -ms-grid-columns: (50%);
       grid-template-columns: repeat(2, 50%);
   grid-gap: 30px;
   width: 100%;
