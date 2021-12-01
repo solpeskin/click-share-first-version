@@ -9,7 +9,7 @@
 }
 
 /*generales*/
-header .menu li, header .menu li svg {
+header .menu .items-menu li, header .menu .items-menu li svg {
   text-decoration: none;
   list-style: none;
   text-align: center;
@@ -49,7 +49,11 @@ header {
   background-color: white;
 }
 
-header .menu {
+header .menu li {
+  list-style: none;
+}
+
+header .menu .items-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,45 +68,37 @@ header .menu {
   /*botones*/
 }
 
-header .menu .boton1 {
+header .menu .items-menu .boton1 {
   border: black solid 2px;
 }
 
-header .menu .boton2 {
+header .menu .items-menu .boton2 {
   background-color: black;
 }
 
-header .menu .boton2 a {
+header .menu .items-menu .boton2 a {
   color: white;
 }
 
-header .menu .boton2, header .menu .boton1, header .menu svg {
+header .menu .items-menu .boton2, header .menu .items-menu .boton1, header .menu .items-menu svg {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-header .menu .boton2:hover, header .menu .boton1:hover, header .menu svg:hover {
+header .menu .items-menu .boton2:hover, header .menu .items-menu .boton1:hover, header .menu .items-menu svg:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
 
-header .menu .negro a, header .menu .negro:hover a {
+header .menu .items-menu .negro a, header .menu .items-menu .negro:hover a {
   color: black;
 }
 
-header .menu .con-fondo, header .menu .sin-fondo {
-  display: inline-block;
-  border-radius: 40px;
-  width: 150px;
-  height: 45px;
-  margin: 2px;
-}
-
-header .menu .con-fondo:hover, header .menu .sublista li:hover {
+header .menu .items-menu .con-fondo:hover, header .menu .items-menu .sublista li:hover {
   background-color: rgba(180, 180, 180, 0.171);
 }
 
-header .menu li {
+header .menu .items-menu li {
   /*display y position para sublista*/
   position: inline-block;
   display: relative;
@@ -110,25 +106,25 @@ header .menu li {
   /*sublista*/
 }
 
-header .menu li:hover ul {
+header .menu .items-menu li:hover ul {
   display: block;
 }
 
-header .menu li a {
+header .menu .items-menu li a {
   font-size: 20px;
   text-decoration: none;
 }
 
-header .menu li svg {
+header .menu .items-menu li svg {
   padding-top: 7px;
 }
 
-header .menu li svg:hover {
+header .menu .items-menu li svg:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-header .menu li .sublista {
+header .menu .items-menu li .sublista {
   /*display y position para sublista*/
   position: absolute;
   display: none;
@@ -140,14 +136,14 @@ header .menu li .sublista {
   /*sublista*/
 }
 
-header .menu li .sublista li {
+header .menu .items-menu li .sublista li {
   font-size: 20px;
   padding: 10px;
   width: 100%;
   color: black;
 }
 
-header .menu li .sublista .sublista {
+header .menu .items-menu li .sublista .sublista {
   /*display y position para sublista*/
   position: absolute;
   display: none;
@@ -157,7 +153,7 @@ header .menu li .sublista .sublista {
   background-color: white;
 }
 
-header .menu li .sublista .sublista li {
+header .menu .items-menu li .sublista .sublista li {
   font-size: 20px;
   padding: 10px;
   width: 100%;
@@ -359,7 +355,7 @@ footer {
   display: grid;
   -ms-grid-rows: 100px;
       grid-template-rows: 100px;
-  -ms-grid-columns: (50%);
+  -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
   grid-gap: 30px;
   width: 100%;
@@ -588,12 +584,12 @@ footer .texts div ul .ic-mobile {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  #inicio header {
+  header {
     position: -webkit-sticky;
     position: sticky;
     top: 0%;
   }
-  #inicio header .submenu-sol {
+  header .menu .items-menu li {
     display: none;
   }
   #nosotros {
@@ -664,6 +660,16 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (min-width: 961px) {
+  header .menu .list-mobile {
+    display: none;
+  }
+  header .menu .con-fondo, header .menu .sin-fondo {
+    display: inline-block;
+    border-radius: 40px;
+    width: 150px;
+    height: 45px;
+    margin: 2px;
+  }
   #pasos {
     display: -webkit-box;
     display: -ms-flexbox;

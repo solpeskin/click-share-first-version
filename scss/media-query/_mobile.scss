@@ -21,12 +21,15 @@
         button {
             transform: scale(1);
         }
+    } 
 
-        header {
-            @include sticky (0%);
-
-            .submenu-sol {
-                display: none;
+    header {
+        @include sticky (0%);
+        .menu {
+            .items-menu {
+                li {
+                    display: none;
+                }
             }
         }
     }
