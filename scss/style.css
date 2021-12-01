@@ -505,6 +505,13 @@ footer .texts div ul .ic-mobile {
   padding: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .is .form .escribir {
+    width: 250px;
+    height: 40px;
+  }
+}
+
 .r {
   margin: 0px;
   display: block;
@@ -540,6 +547,15 @@ footer .texts div ul .ic-mobile {
   #inicio h1 {
     font-size: 50px;
   }
+}
+
+@media screen and (max-width: 500px) and (max-width: 345px) {
+  #inicio h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   #inicio h4 {
     font-size: 16px;
   }
@@ -820,6 +836,9 @@ footer .texts div ul .ic-mobile {
   }
   footer .comments .enviar .comentarios, footer .comments .enviar .mandar {
     margin: 10px auto;
+  }
+  footer .comments .enviar .comentarios {
+    width: 250px;
   }
   footer .texts {
     -webkit-box-ordinal-group: 2;

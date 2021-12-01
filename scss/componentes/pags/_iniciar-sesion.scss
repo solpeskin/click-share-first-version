@@ -57,6 +57,10 @@
             @include tamaño (350px, 40px);
             font-size: $size *1.5;
             padding: 10px;
+
+            @media screen and (max-width: 500px){
+                @include tamaño (250px, 40px);
+            }
         }
     }
 }
