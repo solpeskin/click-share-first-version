@@ -541,8 +541,9 @@ footer .texts div ul .ic-mobile {
   }
   #inicio {
     width: 100%;
-    height: 813px;
+    height: 100vh;
     background-size: cover !important;
+    background-attachment: scroll;
   }
   #inicio h1 {
     font-size: 50px;
@@ -622,6 +623,10 @@ footer .texts div ul .ic-mobile {
 @media screen and (max-width: 500px) {
   #pre-footer .item-pf h2 {
     font-size: 50px;
+  }
+  .is {
+    background-size: cover;
+    height: 130vh;
   }
 }
 

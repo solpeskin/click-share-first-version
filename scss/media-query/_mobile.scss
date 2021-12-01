@@ -8,8 +8,9 @@
     //    inicio
     #inicio {
         width: 100%;
-        height: 813px;
+        height: 100vh;
         background-size: cover !important;
+        background-attachment: scroll;
 
         h1 {
             font-size: $size *5;
@@ -113,7 +114,11 @@
         }
     }
 
-    // footer 
+    // inicio sesión 
+    .is {
+        background-size: cover;
+        height: 130vh;
+    }
     
 }
 
