@@ -423,11 +423,13 @@ footer .texts div ul .ic-mobile {
 }
 
 .is {
+  height: 100vh;
   text-align: center;
   display: block;
   background-size: cover;
   background-image: url("../src/fotos/pool-party.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .is h1 {
