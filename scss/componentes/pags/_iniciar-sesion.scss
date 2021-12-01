@@ -3,7 +3,7 @@
     height: 100vh;
     text-align: center;
     @include background (block, "../src/fotos/pool-party.jpeg" );
-    background-size: cover;
+    background-size: cover ;
 
     h1{
         font-size: $size *5;
