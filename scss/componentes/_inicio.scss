@@ -37,20 +37,6 @@ header {
             @include flex-row (space-around);
             flex-wrap: wrap;
     
-            
-            /*botones*/
-            .boton1 {
-                border: black solid 2px;
-            }
-    
-            .boton2 {
-                background-color: black;
-    
-                a{
-                color: white;
-                }
-            }
-    
             .boton2, .boton1, svg {
                 transition: all 0.3s;
     
@@ -69,7 +55,7 @@ header {
     
             li {
                 @extend %text-decoration;
-                @include display(inline-block, relative );
+                @include display(inline-block, relative);
                 padding-top: 7px;
     
                 &:hover ul {
@@ -103,20 +89,6 @@ header {
                         padding: $size;
                         width: 100%;
                         color: black;
-                    }
-                    /*sublista*/
-                    .sublista {
-                        @include display(absolute, none);
-                        @include espacios (6px 0 0 0, 0px);
-                        text-align: start;
-                        background-color: white;
-        
-                        li {
-                            font-size: $size *2;
-                            padding: $size;
-                            width: 100%;
-                            color: black;
-                        }
                     }
                 }  
         

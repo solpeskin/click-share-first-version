@@ -65,19 +65,6 @@ header .menu .items-menu {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*botones*/
-}
-
-header .menu .items-menu .boton1 {
-  border: black solid 2px;
-}
-
-header .menu .items-menu .boton2 {
-  background-color: black;
-}
-
-header .menu .items-menu .boton2 a {
-  color: white;
 }
 
 header .menu .items-menu .boton2, header .menu .items-menu .boton1, header .menu .items-menu svg {
@@ -133,27 +120,9 @@ header .menu .items-menu li .sublista {
   width: 150px;
   text-align: start;
   background-color: white;
-  /*sublista*/
 }
 
 header .menu .items-menu li .sublista li {
-  font-size: 20px;
-  padding: 10px;
-  width: 100%;
-  color: black;
-}
-
-header .menu .items-menu li .sublista .sublista {
-  /*display y position para sublista*/
-  position: absolute;
-  display: none;
-  margin: 6px 0 0 0;
-  padding: 0px;
-  text-align: start;
-  background-color: white;
-}
-
-header .menu .items-menu li .sublista .sublista li {
   font-size: 20px;
   padding: 10px;
   width: 100%;
@@ -660,6 +629,9 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (min-width: 961px) {
+  header .menu {
+    /*botones*/
+  }
   header .menu .list-mobile {
     display: none;
   }
@@ -669,6 +641,15 @@ footer .texts div ul .ic-mobile {
     width: 150px;
     height: 45px;
     margin: 2px;
+  }
+  header .menu .boton1 {
+    border: black solid 2px;
+  }
+  header .menu .boton2 {
+    background-color: black;
+  }
+  header .menu .boton2 a {
+    color: white;
   }
   #pasos {
     display: -webkit-box;
@@ -758,6 +739,45 @@ footer .texts div ul .ic-mobile {
     margin: 100px 0px;
     height: 350px;
     padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+  }
+  header .menu {
+    padding: 0px;
+  }
+  header .menu .menu-mobile {
+    display: inline-block;
+    position: relative;
+  }
+  header .menu .menu-mobile:hover .items-menu {
+    display: block;
+  }
+  header .menu .menu-mobile .items-menu {
+    position: absolute;
+    display: none;
+    background-color: white;
+    height: 100vh;
+    width: 200px;
+    padding: 0px;
+    left: -20px;
+  }
+  header .menu .menu-mobile .items-menu li {
+    text-align: start;
+    display: block;
+    padding: 10px;
+  }
+  header .menu .menu-mobile .items-menu li a {
+    color: black;
+  }
+  header .menu .menu-mobile .items-menu li .sublista {
+    margin-left: 160px;
+    top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
