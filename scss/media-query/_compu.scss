@@ -70,5 +70,19 @@
             }
         }
     }
+
+    footer {
+        display: grid;
+        grid-template-rows: 100px;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 30px;
+        padding: 70px;
+
+        .texts div {
+            text-align: start;
+        }
+
+        
+    }
     
 }

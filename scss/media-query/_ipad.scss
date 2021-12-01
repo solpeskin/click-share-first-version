@@ -31,4 +31,23 @@
                 
         }
     }
+
+    footer {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .comments {
+            order: 2;
+        }
+
+        .texts {
+            margin: 0px;
+            order: 1;
+
+            div {
+                margin: 0px;
+            }
+        }
+    }
 }

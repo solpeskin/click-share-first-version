@@ -1,37 +1,35 @@
 footer {
-    display: grid;
-    grid-template-rows: 100px;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 30px;
     width: 100%;
     background-color: white;
 
     .comments {
-        padding: 70px;
         text-align: start;
         
         .enviar {
             @include flex-row (start);
             margin-top: 30px;
 
-            input {
+            .comentarios{
                 @include tamaño (300px, 40px);
                 border: solid black 1.5px;
                 transition: all 0.3s;
                 font-size: $size *2;
                 @include espacios (0, 10px);
-                
             }
 
-            svg {
-                transition: all 0.3s;
-                height: 40px;
-                fill: nth($colores, 3 );
+            .mandar {
+                @include tamaño (100px, 40px);
+                background-color: nth($colores, 3 );
+                color: white;
+                border: none;
                 margin-left: 10px;
+                transition: all 0.5s;
+
 
                 &:hover {
-                    fill: nth($colores, 4 );
-                    transform: scale(1.1);
+                    background-color: white;
+                    color: black;
+                    border: black solid 1px;
                 }
             }
         }
@@ -44,14 +42,10 @@ footer {
     }
 
     .texts {
-        padding: 70px 0px 70px 70px;
-        margin-right: 70px;
         grid-area: "text";
         @include flex-row (end);
-        text-align: start;
 
         div {
-            text-align: right;
             margin: 0px 3rem;
 
             ul {
