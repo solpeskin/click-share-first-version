@@ -7,13 +7,21 @@
             }
         }
     }
+
     #pasos {
-        .row1 {
+        div {
+            
+
             div {
-                @include sticky (50%);
                 @include tamaño (50%, 368.8px);
+                @include sticky (50%);
+            }
+
+            .cuadrado4 {
+                margin-right: 50%;
             }
         }
+                
     }
 
     #ustedes {
