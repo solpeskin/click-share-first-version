@@ -31,23 +31,19 @@
     #pasos {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-between;
 
         div {
+            @include tamaño (33.3%, 368.8px);
             @include sticky (53.5%);
-            div {
-                @include tamaño (33.3%, 368.8px);
-            }  
-        }
-        
+            flex-wrap: wrap
+        }  
 
-        .row1 {
-            @include flex-row (center);
+        .cuadrado4 {
+            margin: 0px 33.3%;
         }
 
-        .row3 {
-            @include flex-row (space-between);
-        }
+
     }
 
     #ustedes {

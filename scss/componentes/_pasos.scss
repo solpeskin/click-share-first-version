@@ -9,51 +9,41 @@
 
     // cuadrados
     div {
-        padding: 0px;
-        div {
-            background-size: cover;
-
-            h5, p {
-                @include size-font(2);
-                padding: 50px 50px 0px 50px;
-                color: white
-            }
-
-            h5 {
-                @include size-font(4.5);
-            } 
-        }
-        
-    }
-
-    .row1 {
-        .cuadrado1{
-            @include cuadrados(#9C19E0);
+        background-size: cover;
+        h5, p {
+            @include size-font(2);
+            padding: 50px 50px 0px 50px;
+            color: white
         }
 
-        .cuadrado2 {
-            @include cuadrados(#49FF00);
-        }
-        
-        .cuadrado3 {
-            background-color: #FF5DA2;
-        }
-    }
-
-    .cuadrado4{
-        
-        background-color: #F4A442;
-        margin: 0 auto;
-
-    }
-
-    .row3 {
-       .cuadrado-vacio1 {
-           @include background (inline-block, "https://i.ibb.co/f0ZddYz/colores.jpg");
-        }
-
-        .cuadrado-vacio2 {
-            @include background (inline-block, "https://i.ibb.co/WBcmbx8/polvos.jpg"); 
+        h5 {
+            @include size-font(4.5);
         } 
     }
+  
+    .cuadrado1{
+        @include cuadrados(#9C19E0);
+    }
+
+    .cuadrado2 {
+        @include cuadrados(#49FF00);
+    }
+        
+    .cuadrado3 {
+        background-color: #FF5DA2;
+    }
+  
+    .cuadrado4{
+        background-color: #F4A442;
+        margin: 0 auto;
+    }
+
+
+   .cuadrado-vacio1 {
+       @include background (inline-block, "https://i.ibb.co/f0ZddYz/colores.jpg");
+    }
+
+    .cuadrado-vacio2 {
+        @include background (inline-block, "https://i.ibb.co/WBcmbx8/polvos.jpg"); 
+    } 
 }

@@ -52,16 +52,9 @@
             font-size: $size *6;
         }
 
-        div div {
+        div {
             @include tamaño (100%, 368.8px); 
-        }
-
-        div, div div {
-            @include sticky (50%);
-        }
-
-        .row1, .row3 {
-            @extend %column;
+            @include sticky (45%);
         }
     }
     

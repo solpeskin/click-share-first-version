@@ -171,36 +171,32 @@ header .menu .items-menu li .sublista li {
 }
 
 #pasos div {
-  padding: 0px;
-}
-
-#pasos div div {
   background-size: cover;
 }
 
-#pasos div div h5, #pasos div div p {
+#pasos div h5, #pasos div p {
   font-size: 20px;
   padding: 50px 50px 0px 50px;
   color: white;
 }
 
-#pasos div div h5 {
+#pasos div h5 {
   font-size: 45px;
 }
 
-#pasos .row1 .cuadrado1 {
+#pasos .cuadrado1 {
   background-color: #9C19E0;
   display: inline;
   float: left;
 }
 
-#pasos .row1 .cuadrado2 {
+#pasos .cuadrado2 {
   background-color: #49FF00;
   display: inline;
   float: left;
 }
 
-#pasos .row1 .cuadrado3 {
+#pasos .cuadrado3 {
   background-color: #FF5DA2;
 }
 
@@ -209,14 +205,14 @@ header .menu .items-menu li .sublista li {
   margin: 0 auto;
 }
 
-#pasos .row3 .cuadrado-vacio1 {
+#pasos .cuadrado-vacio1 {
   display: inline-block;
   background-size: cover;
   background-image: url("https://i.ibb.co/f0ZddYz/colores.jpg");
   background-repeat: no-repeat;
 }
 
-#pasos .row3 .cuadrado-vacio2 {
+#pasos .cuadrado-vacio2 {
   display: inline-block;
   background-size: cover;
   background-image: url("https://i.ibb.co/WBcmbx8/polvos.jpg");
@@ -530,7 +526,7 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (max-width: 500px) {
-  #pasos, #pasos .row1, #pasos .row3 {
+  #pasos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -577,14 +573,12 @@ footer .texts div ul .ic-mobile {
   #pasos h2 {
     font-size: 60px;
   }
-  #pasos div div {
+  #pasos div {
     width: 100%;
     height: 368.8px;
-  }
-  #pasos div, #pasos div div {
     position: -webkit-sticky;
     position: sticky;
-    top: 50%;
+    top: 45%;
   }
   #ustedes h2 {
     background-color: #FF0075;
@@ -661,41 +655,21 @@ footer .texts div ul .ic-mobile {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #pasos div {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 53.5%;
-  }
-  #pasos div div {
-    width: 33.3%;
-    height: 368.8px;
-  }
-  #pasos .row1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #pasos .row3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #pasos div {
+    width: 33.3%;
+    height: 368.8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 53.5%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #pasos .cuadrado4 {
+    margin: 0px 33.3%;
   }
   #ustedes .conteiners {
     padding: 40px;
@@ -737,12 +711,12 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (min-width: 500px) and (max-width: 961px) {
-  #pasos .row1 div {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50%;
+  #pasos div {
     width: 50%;
     height: 368.8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65%;
   }
   #ustedes h2 {
     padding-bottom: 150px;
