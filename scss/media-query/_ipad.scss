@@ -11,7 +11,7 @@
     #pasos {
         div {
             @include tamaño (50%, 368.8px);
-            @include sticky (65%);
+            @include sticky (50%);
         }
     }
 
