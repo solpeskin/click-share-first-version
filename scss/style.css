@@ -541,19 +541,19 @@ footer .texts div ul .ic-mobile {
     background-attachment: scroll;
   }
   #inicio h1 {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 
 @media screen and (max-width: 500px) and (max-width: 345px) {
   #inicio h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #inicio h4 {
-    font-size: 8px;
+    font-size: 16px;
   }
   #inicio button {
     -webkit-transform: scale(1);
@@ -563,14 +563,14 @@ footer .texts div ul .ic-mobile {
     padding: 20px;
   }
   #nosotros div p, #nosotros div p {
-    font-size: 7.5px;
+    font-size: 15px;
     word-wrap: break-word;
   }
   #nosotros div h5, #nosotros div h5 {
-    font-size: 15px;
+    font-size: 30px;
   }
   #pasos h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   #pasos div {
     width: 100%;
@@ -578,6 +578,9 @@ footer .texts div ul .ic-mobile {
     position: -webkit-sticky;
     position: sticky;
     top: 45%;
+  }
+  #pasos div h5 {
+    font-size: 30px;
   }
   #ustedes h2 {
     background-color: #FF0075;
@@ -603,19 +606,19 @@ footer .texts div ul .ic-mobile {
     margin-left: 70px;
     position: relative;
     bottom: 150px;
-    font-size: 7.5px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 500px) and (max-width: 365px) {
   #ustedes .conteiners div .gente {
-    font-size: 6px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #pre-footer .item-pf h2 {
-    font-size: 25px;
+    font-size: 50px;
   }
   .is {
     background-size: cover;
@@ -667,6 +670,15 @@ footer .texts div ul .ic-mobile {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1140px) {
+  #pasos div h5 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 961px) {
   #pasos .cuadrado4 {
     margin: 0px 33.3%;
   }
@@ -717,6 +729,19 @@ footer .texts div ul .ic-mobile {
     position: sticky;
     top: 50%;
   }
+  #pasos div h5 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 961px) and (max-width: 1140px) {
+  #pasos div p {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 961px) {
   #ustedes h2 {
     padding-bottom: 150px;
   }

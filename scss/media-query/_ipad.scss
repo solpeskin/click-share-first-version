@@ -13,6 +13,17 @@
         div {
             @include tamaño (50%, 368.8px);
             @include sticky (50%);
+
+            h5 {
+                font-size: $size *4.5;
+            }
+
+            @media screen and (max-width: 1140px) {
+                p {
+                    padding-top: 20px;
+                    font-size: $size *3;
+                }
+            }
         }
     }
 
