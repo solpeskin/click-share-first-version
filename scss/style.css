@@ -202,7 +202,6 @@ header .menu .items-menu li .sublista li {
 
 #pasos .cuadrado4 {
   background-color: #F4A442;
-  margin: 0 auto;
 }
 
 #pasos .cuadrado-vacio1 {
@@ -542,19 +541,19 @@ footer .texts div ul .ic-mobile {
     background-attachment: scroll;
   }
   #inicio h1 {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 
 @media screen and (max-width: 500px) and (max-width: 345px) {
   #inicio h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #inicio h4 {
-    font-size: 16px;
+    font-size: 8px;
   }
   #inicio button {
     -webkit-transform: scale(1);
@@ -564,14 +563,14 @@ footer .texts div ul .ic-mobile {
     padding: 20px;
   }
   #nosotros div p, #nosotros div p {
-    font-size: 15px;
+    font-size: 7.5px;
     word-wrap: break-word;
   }
   #nosotros div h5, #nosotros div h5 {
-    font-size: 30px;
+    font-size: 15px;
   }
   #pasos h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
   #pasos div {
     width: 100%;
@@ -604,19 +603,19 @@ footer .texts div ul .ic-mobile {
     margin-left: 70px;
     position: relative;
     bottom: 150px;
-    font-size: 15px;
+    font-size: 7.5px;
   }
 }
 
 @media screen and (max-width: 500px) and (max-width: 365px) {
   #ustedes .conteiners div .gente {
-    font-size: 12px;
+    font-size: 6px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #pre-footer .item-pf h2 {
-    font-size: 50px;
+    font-size: 25px;
   }
   .is {
     background-size: cover;
@@ -706,7 +705,7 @@ footer .texts div ul .ic-mobile {
 
 @media screen and (min-width: 500px) and (max-width: 961px) and (min-width: 500px) and (max-width: 663px) {
   #inicio h1 {
-    font-size: 70px;
+    font-size: 42px;
   }
 }
 
