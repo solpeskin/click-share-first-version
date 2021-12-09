@@ -176,7 +176,7 @@ header .menu .items-menu li .sublista li {
 
 #pasos div h5, #pasos div p {
   font-size: 20px;
-  padding: 50px 50px 0px 50px;
+  padding: 30px 30px 0px 30px;
   color: white;
 }
 
@@ -712,6 +712,12 @@ footer .texts div ul .ic-mobile {
   }
   footer .texts div {
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 961px) {
+  #inicio {
+    background-attachment: scroll;
   }
 }
 

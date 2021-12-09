@@ -2,6 +2,7 @@
 
     $size: 6px;
     #inicio {
+        background-attachment: scroll;
         h1 {
             @media screen and (min-width: 500px) and (max-width: 663px){
                 font-size: $size *7;
