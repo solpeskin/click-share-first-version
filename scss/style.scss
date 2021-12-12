@@ -10,7 +10,7 @@
 @import "variables";
 
 // font
-@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Questrial&display=swap');
 
 // páginas
 @import "componentes/inicio";
@@ -30,3 +30,6 @@
 @import "media-query/ipad";
 @import "media-query/submenu";
 @import "media-query/footer-responsive";
+
+// footer páginas 
+@import "componentes/footer-pags/centro";
