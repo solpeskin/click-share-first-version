@@ -62,4 +62,30 @@
             }
         }
     }
+
+    // centro de ayuda
+    .centro-ayuda {
+        .busqueda {
+
+            div input {
+                width: 300px;
+                margin: auto;
+            }
+        }
+
+
+        .preguntas-destacadas {
+            .todas-pregs {  
+                div {
+                    margin: auto;
+
+                    .contenedores {
+                        width: 400px !important;    
+                    }
+                }
+            }
+            
+        }    
+    }
+    
 }

@@ -3,8 +3,7 @@
     padding: 250px 0px;
 
     .item-pf {
-        display: flex;
-        flex-direction: column;
+        @include flex (column, center);
         
         h2 {
             display: inline;

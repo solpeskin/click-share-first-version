@@ -38,9 +38,9 @@ $colores:
     background-repeat: no-repeat;
 }
 
-@mixin flex-row ($justify){
+@mixin flex ($direction,$justify){
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     justify-content: $justify;
 }
 

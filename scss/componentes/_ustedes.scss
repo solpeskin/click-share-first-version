@@ -8,10 +8,8 @@
     }
 
     .conteiners {
-        display: flex;
-        flex-direction: column;
+        @include flex (column, space-between);
         flex-wrap: wrap;
-        justify-content: space-evenly;
         padding: 40px 0;
 
         div {

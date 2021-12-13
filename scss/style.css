@@ -15,7 +15,7 @@ header .menu .items-menu li, header .menu .items-menu li svg {
   text-align: center;
 }
 
-.preguntas-destacadas .todas-pregs .preguntas div {
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div {
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
@@ -245,11 +245,11 @@ header .menu .items-menu li .sublista li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   padding: 40px 0;
 }
 
@@ -305,6 +305,9 @@ header .menu .items-menu li .sublista li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #pre-footer .item-pf h2 {
@@ -485,6 +488,9 @@ footer .texts div ul .ic-mobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -629,6 +635,19 @@ footer .texts div ul .ic-mobile {
     background-size: cover;
     height: 130vh;
   }
+  .centro-ayuda .busqueda h4 {
+    font-size: 40px !important;
+  }
+  .centro-ayuda .busqueda div input {
+    width: auto !important;
+  }
+  .centro-ayuda .preguntas {
+    margin: auto;
+  }
+  .centro-ayuda .preguntas .contenedores {
+    width: auto !important;
+    max-width: 300px;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -718,6 +737,18 @@ footer .texts div ul .ic-mobile {
   footer .texts div {
     text-align: start;
   }
+  .preguntas-destacadas .todas-pregs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 961px) {
@@ -787,6 +818,16 @@ footer .texts div ul .ic-mobile {
   }
   footer .texts div {
     margin: 0px;
+  }
+  .centro-ayuda .busqueda div input {
+    width: 300px;
+    margin: auto;
+  }
+  .centro-ayuda .preguntas-destacadas .todas-pregs div {
+    margin: auto;
+  }
+  .centro-ayuda .preguntas-destacadas .todas-pregs div .contenedores {
+    width: 400px !important;
   }
 }
 
@@ -876,25 +917,25 @@ footer .texts div ul .ic-mobile {
   }
 }
 
-.busqueda {
+.centro-ayuda .busqueda {
   display: static;
   background-size: cover;
   background-image: url("../src/fotos/loros.jpeg");
   background-repeat: no-repeat;
-  padding: 130px;
+  padding: 130px 0;
 }
 
-.busqueda h4 {
+.centro-ayuda .busqueda h4 {
   font-size: 60px;
   text-align: center;
   color: white;
 }
 
-.busqueda .buscar {
+.centro-ayuda .busqueda .buscar {
   text-align: center;
 }
 
-.busqueda .buscar input {
+.centro-ayuda .busqueda .buscar input {
   width: 500px;
   height: 40px;
   margin: 50px 20px;
@@ -902,7 +943,7 @@ footer .texts div ul .ic-mobile {
   border: white;
 }
 
-.busqueda .buscar button {
+.centro-ayuda .busqueda .buscar button {
   height: 40px;
   background: none;
   border: none;
@@ -911,36 +952,23 @@ footer .texts div ul .ic-mobile {
   transition: all 0.5s;
 }
 
-.busqueda .buscar button:hover {
+.centro-ayuda .busqueda .buscar button:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-.preguntas-destacadas {
-  padding: 50px 0 50vh 0;
+.centro-ayuda .preguntas-destacadas {
+  padding: 50px 0 30vh 0;
 }
 
-.preguntas-destacadas h5 {
+.centro-ayuda .preguntas-destacadas h5 {
   font-size: 30px;
   text-align: center;
   color: black;
   margin: 30px;
 }
 
-.preguntas-destacadas .todas-pregs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.preguntas-destacadas .todas-pregs .preguntas {
+.centro-ayuda .preguntas-destacadas .todas-pregs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,30 +976,64 @@ footer .texts div ul .ic-mobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.preguntas-destacadas .todas-pregs .preguntas div {
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div {
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
-  width: 600px;
+  width: 470px;
   height: 80px;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   cursor: pointer;
 }
 
-.preguntas-destacadas .todas-pregs .preguntas div:hover .ans {
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover .ans {
   opacity: 100;
 }
 
-.preguntas-destacadas .todas-pregs .preguntas div:hover {
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover {
+  -webkit-animation-name: height;
+          animation-name: height;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   height: 180px;
 }
 
-.preguntas-destacadas .todas-pregs .preguntas div .ans {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div .ans {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   opacity: 0;
+  overflow: hidden;
+}
+
+.centro-ayuda .house {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.centro-ayuda .house:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@ footer {
         text-align: start;
         
         .enviar {
-            @include flex-row (start);
+            @include flex (row, start);
             margin-top: 30px;
 
             .comentarios{
@@ -43,7 +43,7 @@ footer {
 
     .texts {
         grid-area: "text";
-        @include flex-row (end);
+        @include flex (row, end);
 
         div {
             margin: 0px 3rem;

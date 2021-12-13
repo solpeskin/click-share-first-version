@@ -34,7 +34,7 @@ header {
         }
 
         .items-menu {
-            @include flex-row (space-around);
+            @include flex (row, space-around);
             flex-wrap: wrap;
     
             .boton2, .boton1, svg {
