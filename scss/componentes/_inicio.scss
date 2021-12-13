@@ -12,12 +12,14 @@
 
     /*textos*/
     h1 {
+        @include entrada (1.5s);
         padding-top: 100px;
         @include h-text (10, white);
         word-wrap:break-word;
     }
 
     h4 {
+        @include entrada (2s);
         font-size: $size *1.7; 
     }
 }
@@ -25,6 +27,7 @@
 header {
     @include espacios(0 0 20px 0,20px );
     @include sticky (0%);
+    
     z-index: 4;
     background-color: white;
 

@@ -20,6 +20,28 @@ header .menu .items-menu li, header .menu .items-menu li svg {
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
+@-webkit-keyframes entrada {
+  0% {
+    opacity: 0%;
+    top: 50px;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0%;
+    top: 50px;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
 #inicio {
   width: 100%;
   padding: 10%;
@@ -33,6 +55,11 @@ header .menu .items-menu li, header .menu .items-menu li svg {
 }
 
 #inicio h1 {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
   padding-top: 100px;
   font-size: 100px;
   text-align: center;
@@ -41,6 +68,11 @@ header .menu .items-menu li, header .menu .items-menu li svg {
 }
 
 #inicio h4 {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
   font-size: 17px;
 }
 
@@ -135,6 +167,11 @@ header .menu .items-menu li .sublista li {
 }
 
 .boton {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 2.4s;
+          animation-duration: 2.4s;
+  position: relative;
   background-color: white;
   width: 200px;
   height: 45px;
@@ -436,9 +473,22 @@ footer .texts div ul .ic-mobile {
 }
 
 .is h1 {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
   font-size: 50px;
   margin: 20px auto 0px auto;
   color: white;
+}
+
+.is p {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
 }
 
 .is p:hover {
@@ -498,6 +548,11 @@ footer .texts div ul .ic-mobile {
 }
 
 .is .form input {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  position: relative;
   margin: 10px 0 30px 0;
 }
 
@@ -832,11 +887,6 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (max-width: 961px) {
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0%;
-  }
   header .menu {
     padding: 0px;
   }
@@ -922,6 +972,7 @@ footer .texts div ul .ic-mobile {
   background-size: cover;
   background-image: url("../src/fotos/loros.jpeg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 130px 0;
 }
 
@@ -929,6 +980,11 @@ footer .texts div ul .ic-mobile {
   font-size: 60px;
   text-align: center;
   color: white;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
 }
 
 .centro-ayuda .busqueda .buscar {
@@ -940,6 +996,11 @@ footer .texts div ul .ic-mobile {
   height: 40px;
   margin: 50px 20px;
   padding: 0 10px;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
   border: white;
 }
 
@@ -950,6 +1011,11 @@ footer .texts div ul .ic-mobile {
   fill: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
 }
 
 .centro-ayuda .busqueda .buscar button:hover {
@@ -958,7 +1024,7 @@ footer .texts div ul .ic-mobile {
 }
 
 .centro-ayuda .preguntas-destacadas {
-  padding: 50px 0 30vh 0;
+  padding: 50px 0 10vh 0;
 }
 
 .centro-ayuda .preguntas-destacadas h5 {
@@ -1035,5 +1101,13 @@ footer .texts div ul .ic-mobile {
 .centro-ayuda .house:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+}
+
+.centro-ayuda footer .mandar {
+  background-color: #29b5b9 !important;
+}
+
+.centro-ayuda footer h5, .centro-ayuda footer ul li a:hover {
+  color: #29b5b9 !important;
 }
 /*# sourceMappingURL=style.css.map */

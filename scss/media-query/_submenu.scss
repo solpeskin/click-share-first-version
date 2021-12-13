@@ -1,7 +1,6 @@
 // menu para el responsive en ipad y mobile 
 @media screen and (max-width: 961px){
     header {
-        @include sticky (0%);
         .menu {
             padding: 0px;
 
@@ -10,7 +9,7 @@
                 position:relative;
 
                 &:hover .items-menu {
-                    display: block;
+                    display: block; 
                 }
                 
                 .items-menu {

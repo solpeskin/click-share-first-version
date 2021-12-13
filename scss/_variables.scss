@@ -7,6 +7,7 @@ $colores:
 #FF5DA2,
 #FF0075,
 #b81a5e,
+rgb(41, 181, 185),
 ;
 
 // mixins 
@@ -60,6 +61,18 @@ $colores:
     box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
 
+@mixin entrada ($duration){
+    animation-name: entrada;
+    animation-duration: $duration;
+    position: relative;
+}
+
+// animacion para cada página 
+@keyframes entrada {
+    0% { opacity: 0%; top: 50px}
+    100% {opacity: 100%; top: 0px;}
+}
+
 // páginas específicas 
 // inicio 
 @mixin display ($p, $d) { /*display y position para sublista*/
@@ -77,5 +90,3 @@ $colores:
     display: inline;
     float: left;
 }
-
-// mobile 
