@@ -44,12 +44,20 @@ $colores:
     justify-content: $justify;
 }
 
+@mixin animaciones ($name, $duration){
+    animation-name: $name ;
+    animation-duration: $duration;
+}
 
 // extensiones 
 %text-decoration {
     text-decoration: none;
     list-style: none;
     text-align: center;
+}
+
+%box-shadow {
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
 
 // páginas específicas 
