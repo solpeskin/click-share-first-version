@@ -54,22 +54,27 @@
                     @include espacios (10px, 20px);
                     @include tamaño (470px, 80px);
                     @extend %box-shadow;
-                    transition: all 1s ease; 
+                    transition: all 0.8s ease; 
                     cursor: pointer;
+
+                    &:hover {
+                        height: 200px
+                    }
                     
                     &:hover .ans{
+                        @include animaciones (animacion-ans, 1s);
+                        @keyframes animacion-ans {
+                            0% {opacity: 0; }
+                            30% {opacity: 0; }
+                            100% {opacity: 100; }
+                        }
+                        
                         opacity: 100;
                     }
 
-                    &:hover {
-                        @include animaciones (height, 1s);
-                        height: 180px
-                    }
-
                     .ans {
-                        transition: all 0.5s ease-in;
+                        transition: all 0.2s ease-in;
                         opacity: 0;
-                        overflow: hidden;
                     }
                 }   
             }
@@ -91,11 +96,11 @@
     // cambio colores del footer 
     footer {
         .mandar {
-            background-color: nth($colores, 5) !important;
+            background-color: rgb(100, 223, 131) !important;
         }
 
         h5, ul li a:hover {
-            color: nth($colores, 5) !important;
+            color: rgb(100, 223, 131) !important;
         }
     }
 }

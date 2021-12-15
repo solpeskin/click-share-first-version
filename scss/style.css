@@ -23,22 +23,22 @@ header .menu .items-menu li, header .menu .items-menu li svg {
 @-webkit-keyframes entrada {
   0% {
     opacity: 0%;
-    top: 50px;
+    bottom: 50px;
   }
   100% {
     opacity: 100%;
-    top: 0px;
+    bottom: 0px;
   }
 }
 
 @keyframes entrada {
   0% {
     opacity: 0%;
-    top: 50px;
+    bottom: 50px;
   }
   100% {
     opacity: 100%;
-    top: 0px;
+    bottom: 0px;
   }
 }
 
@@ -48,8 +48,10 @@ header .menu .items-menu li, header .menu .items-menu li svg {
   text-align: center;
   color: white;
   /*fondo*/
-  background-image: url("../src/fotos/neon.jpeg");
+  display: block;
   background-size: cover;
+  background-image: url("../src/fotos/neon.jpeg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   /*textos*/
 }
@@ -1066,28 +1068,51 @@ footer .texts div ul .ic-mobile {
   padding: 20px;
   width: 470px;
   height: 80px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   cursor: pointer;
 }
 
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover {
+  height: 200px;
+}
+
 .centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover .ans {
+  -webkit-animation-name: animacion-ans;
+          animation-name: animacion-ans;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   opacity: 100;
 }
 
-.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover {
-  -webkit-animation-name: height;
-          animation-name: height;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  height: 180px;
+@-webkit-keyframes animacion-ans {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes animacion-ans {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div .ans {
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   opacity: 0;
-  overflow: hidden;
 }
 
 .centro-ayuda .house {
@@ -1104,10 +1129,109 @@ footer .texts div ul .ic-mobile {
 }
 
 .centro-ayuda footer .mandar {
-  background-color: #29b5b9 !important;
+  background-color: #64df83 !important;
 }
 
 .centro-ayuda footer h5, .centro-ayuda footer ul li a:hover {
-  color: #29b5b9 !important;
+  color: #64df83 !important;
+}
+
+header {
+  position: fixed;
+  top: 50px;
+  left: 80px;
+  margin: auto 0;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: black 1px solid;
+  border-radius: 100px;
+}
+
+header ul li {
+  list-style: none;
+  margin: 50px 20px;
+  cursor: pointer;
+}
+
+#tutoriales {
+  scroll-behavior: smooth;
+}
+
+#tutoriales section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tutoriales section .videos {
+  margin: 80px 0;
+  background-color: silver;
+  border-radius: 20px;
+  position: absolute;
+  width: 40vh;
+  height: 80vh;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
+}
+
+#tutoriales section .videos p {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#tutoriales section div {
+  width: 400px;
+  margin: 60px 90px;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
+}
+
+#tutoriales section div h5 {
+  color: #333333;
+  font-size: 40px;
+  margin: 60px 0;
+}
+
+#tutoriales section div p {
+  word-wrap: break-word;
+  line-height: 25px;
+}
+
+#tutoriales #invitar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

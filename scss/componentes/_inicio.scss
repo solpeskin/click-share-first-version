@@ -6,8 +6,7 @@
     color: white;
 
     /*fondo*/
-    background-image: url("../src/fotos/neon.jpeg");
-    background-size: cover;
+    @include background (block, "../src/fotos/neon.jpeg" );
     background-attachment: fixed;
 
     /*textos*/

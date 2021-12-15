@@ -61,16 +61,18 @@ rgb(41, 181, 185),
     box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
 
+
+
+// animacion para cada página 
+@keyframes entrada {
+    0% { opacity: 0%; bottom: 50px}
+    100% {opacity: 100%; bottom: 0px;}
+}
+
 @mixin entrada ($duration){
     animation-name: entrada;
     animation-duration: $duration;
     position: relative;
-}
-
-// animacion para cada página 
-@keyframes entrada {
-    0% { opacity: 0%; top: 50px}
-    100% {opacity: 100%; top: 0px;}
 }
 
 // páginas específicas 
