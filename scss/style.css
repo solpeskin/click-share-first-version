@@ -42,6 +42,16 @@ header .menu .items-menu li, header .menu .items-menu li svg {
   }
 }
 
+@-webkit-keyframes movimiento {
+  0% {
+  }
+}
+
+@keyframes movimiento {
+  0% {
+  }
+}
+
 #inicio {
   width: 100%;
   padding: 10%;
@@ -313,7 +323,7 @@ header .menu .items-menu li .sublista li {
 }
 
 #nosotros {
-  background-color: white;
+  background-image: url("../src/fotos/fondo-puntos.webp");
   text-align: start;
   color: black;
   padding: 100px;
@@ -1136,39 +1146,43 @@ footer .texts div ul .ic-mobile {
   color: #64df83 !important;
 }
 
-header {
-  position: fixed;
-  top: 50px;
-  left: 80px;
-  margin: auto 0;
+.body-tuto {
+  background-image: url("../src/fotos/fondo-puntos.webp");
 }
 
-header ul {
+.body-tuto .header-tuto {
+  position: fixed;
+  width: 100%;
+}
+
+.body-tuto .header-tuto ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: black 1px solid;
-  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header ul li {
+.body-tuto .header-tuto ul li {
   list-style: none;
-  margin: 50px 20px;
+  margin: 20px 50px;
   cursor: pointer;
 }
 
-#tutoriales {
-  scroll-behavior: smooth;
+.body-tuto .header-tuto ul li img {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
-#tutoriales section {
+.body-tuto #tutoriales section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1181,10 +1195,10 @@ header ul li {
           justify-content: center;
 }
 
-#tutoriales section .videos {
-  margin: 80px 0;
+.body-tuto #tutoriales section .videos {
+  margin: 170px 0 80px 0;
   background-color: silver;
-  border-radius: 20px;
+  border-radius: 50px;
   position: absolute;
   width: 40vh;
   height: 80vh;
@@ -1195,15 +1209,15 @@ header ul li {
   position: relative;
 }
 
-#tutoriales section .videos p {
+.body-tuto #tutoriales section .videos p {
   color: white;
   text-align: center;
   padding-top: 100px;
 }
 
-#tutoriales section div {
+.body-tuto #tutoriales section .texto-explicacion {
   width: 400px;
-  margin: 60px 90px;
+  margin: 170px 90px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
   -webkit-animation-duration: 1.5s;
@@ -1211,18 +1225,18 @@ header ul li {
   position: relative;
 }
 
-#tutoriales section div h5 {
+.body-tuto #tutoriales section .texto-explicacion h5 {
   color: #333333;
   font-size: 40px;
   margin: 60px 0;
 }
 
-#tutoriales section div p {
+.body-tuto #tutoriales section .texto-explicacion p {
   word-wrap: break-word;
   line-height: 25px;
 }
 
-#tutoriales #invitar {
+.body-tuto #tutoriales #invitar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
