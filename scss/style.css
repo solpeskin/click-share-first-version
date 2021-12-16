@@ -42,16 +42,6 @@ header .menu .items-menu li, header .menu .items-menu li svg {
   }
 }
 
-@-webkit-keyframes movimiento {
-  0% {
-  }
-}
-
-@keyframes movimiento {
-  0% {
-  }
-}
-
 #inicio {
   width: 100%;
   padding: 10%;
