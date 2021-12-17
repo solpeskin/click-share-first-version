@@ -926,6 +926,7 @@ footer .texts div ul .ic-mobile {
 @media screen and (max-width: 961px) {
   .body-tuto .inicio-t {
     background-attachment: scroll !important;
+    background-size: 100%;
   }
   .body-tuto .inicio-t .img-t {
     max-width: 300%;
@@ -966,6 +967,12 @@ footer .texts div ul .ic-mobile {
   }
   .body-tuto .tutoriales .texto-explicacion, .body-tuto .tutoriales .videos {
     margin: 30px auto !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .politica-priv {
+    width: 300px !important;
   }
 }
 

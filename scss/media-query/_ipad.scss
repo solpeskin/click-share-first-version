@@ -96,6 +96,7 @@
     .body-tuto {
         .inicio-t {
             background-attachment:scroll !important;
+            background-size: 100%;
             .img-t {
                 max-width: 300%;
                 padding-left: 20px !important;
@@ -130,5 +131,13 @@
                 }
             }
         }
+    }
+}
+
+// política de privacidad 
+@media screen and (max-width: 470px){
+        
+    .politica-priv {
+        width: 300px !important;
     }
 }
