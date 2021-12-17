@@ -924,6 +924,9 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (max-width: 961px) {
+  .body-tuto .inicio-t {
+    background-attachment: scroll !important;
+  }
   .body-tuto .inicio-t .img-t {
     max-width: 300%;
     padding-left: 20px !important;
