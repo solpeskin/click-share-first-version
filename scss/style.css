@@ -705,6 +705,38 @@ footer .texts div ul .ic-mobile {
     width: auto !important;
     max-width: 300px;
   }
+  .body-tuto .header-tuto {
+    width: 100%;
+    height: 80px !important;
+  }
+  .body-tuto .header-tuto ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    position: relative;
+    bottom: 40px;
+  }
+  .body-tuto .texto-explicacion {
+    max-width: 100%;
+  }
+  .body-tuto .texto-explicacion h5, .body-tuto .texto-explicacion p {
+    font-size: 12px;
+    margin-right: 0px !important;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 310px) {
+  .body-tuto .videos {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -806,6 +838,9 @@ footer .texts div ul .ic-mobile {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .body-tuto .tutoriales .texto-explicacion {
+    margin: 100px 90px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 961px) {
@@ -885,6 +920,49 @@ footer .texts div ul .ic-mobile {
   }
   .centro-ayuda .preguntas-destacadas .todas-pregs div .contenedores {
     width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .body-tuto .inicio-t .img-t {
+    max-width: 300%;
+    padding-left: 20px !important;
+  }
+  .body-tuto .inicio-t .img-t h5, .body-tuto .inicio-t .img-t p {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .body-tuto .tutoriales .texto-explicacion {
+    font-size: 15px;
+    margin: 50px 30px;
+  }
+  .body-tuto .tutoriales .texto-explicacion p, .body-tuto .tutoriales .texto-explicacion h5 {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 961px) and (min-width: 640px) {
+  .body-tuto .tutoriales .texto-explicacion {
+    width: 190px !important;
+  }
+}
+
+@media screen and (max-width: 961px) and (max-width: 640px) {
+  .body-tuto .tutoriales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .body-tuto .tutoriales .texto-explicacion, .body-tuto .tutoriales .videos {
+    margin: 30px auto !important;
   }
 }
 
@@ -1115,7 +1193,15 @@ footer .texts div ul .ic-mobile {
   opacity: 0;
 }
 
-.centro-ayuda .house {
+.centro-ayuda footer .mandar {
+  background-color: #64df83 !important;
+}
+
+.centro-ayuda footer h5, .centro-ayuda footer ul li a:hover {
+  color: #64df83 !important;
+}
+
+.house {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1123,17 +1209,9 @@ footer .texts div ul .ic-mobile {
   transition: all 0.3s;
 }
 
-.centro-ayuda .house:hover {
+.house:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-}
-
-.centro-ayuda footer .mandar {
-  background-color: #64df83 !important;
-}
-
-.centro-ayuda footer h5, .centro-ayuda footer ul li a:hover {
-  color: #64df83 !important;
 }
 
 .body-tuto .inicio-t {
@@ -1156,7 +1234,7 @@ footer .texts div ul .ic-mobile {
 }
 
 .body-tuto .inicio-t .img-t {
-  padding: 150px 100px;
+  padding: 150px 10px 150px 100px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
   -webkit-animation-duration: 1.5s;
@@ -1172,6 +1250,7 @@ footer .texts div ul .ic-mobile {
 
 .body-tuto .inicio-t .img-t p {
   font-size: 40px;
+  word-wrap: break-word;
 }
 
 .body-tuto .header-tuto {
@@ -1198,7 +1277,7 @@ footer .texts div ul .ic-mobile {
 
 .body-tuto .header-tuto ul li {
   list-style: none;
-  margin: 50px 10px;
+  margin: 50px 0px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1209,7 +1288,7 @@ footer .texts div ul .ic-mobile {
           transform: scale(1.3);
 }
 
-.body-tuto #tutoriales section {
+.body-tuto .tutoriales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1220,22 +1299,19 @@ footer .texts div ul .ic-mobile {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
   background-color: white;
 }
 
-.body-tuto #tutoriales section .videos {
+.body-tuto .tutoriales .videos {
   margin: 100px 0 80px 0;
   background-color: rgba(124, 124, 124, 0.336);
-  border-radius: 50px;
   position: absolute;
+  border-radius: 50px;
   border: black solid 1px;
   -webkit-box-shadow: -10px 10px 50px rgba(255, 4, 130, 0.377);
           box-shadow: -10px 10px 50px rgba(255, 4, 130, 0.377);
-  width: 40vh;
-  height: 80vh;
+  width: 300px;
+  height: 600px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
   -webkit-animation-duration: 1s;
@@ -1243,14 +1319,13 @@ footer .texts div ul .ic-mobile {
   position: relative;
 }
 
-.body-tuto #tutoriales section .videos p {
+.body-tuto .tutoriales .videos p {
   text-align: center;
   padding-top: 100px;
 }
 
-.body-tuto #tutoriales section .texto-explicacion {
+.body-tuto .tutoriales .texto-explicacion {
   width: 400px;
-  margin: 170px 90px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
   -webkit-animation-duration: 1.5s;
@@ -1258,18 +1333,18 @@ footer .texts div ul .ic-mobile {
   position: relative;
 }
 
-.body-tuto #tutoriales section .texto-explicacion h5 {
+.body-tuto .tutoriales .texto-explicacion h5 {
   color: #333333;
   font-size: 40px;
   margin: 60px 0;
 }
 
-.body-tuto #tutoriales section .texto-explicacion p {
+.body-tuto .tutoriales .texto-explicacion p {
   word-wrap: break-word;
   line-height: 25px;
 }
 
-.body-tuto #tutoriales #invitar {
+.body-tuto #invitar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1280,5 +1355,31 @@ footer .texts div ul .ic-mobile {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.body-tuto #invitar .texto-explicacion {
+  margin-left: 0;
+}
+
+.politica-priv {
+  width: 500px;
+  font-size: 20px;
+  margin: 50px auto;
+}
+
+.politica-priv h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.politica-priv p {
+  margin-bottom: 50px;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.politica-priv p span {
+  font-size: 35px;
+  color: #ff6c98;
 }
 /*# sourceMappingURL=style.css.map */
