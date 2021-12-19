@@ -17,7 +17,7 @@
                 text-align: center
             }
 
-            .enviar {
+            .enviar label{
                 @extend %Column;
 
                 .comentarios, .mandar{

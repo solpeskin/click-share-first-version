@@ -144,8 +144,7 @@
     .body-tuto { 
         .header-tuto {
             @include tamaño (100%, 80px !important);
-            
-
+        
             ul {
                 @include flex (row !important, space-around !important);
                 position: relative;
@@ -155,6 +154,7 @@
 
         .texto-explicacion {
             max-width: 100%;
+            
             h5, p {
                 font-size: $size * 1.2;
                 margin-right: 0px !important;

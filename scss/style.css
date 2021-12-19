@@ -370,7 +370,7 @@ footer .comments {
   text-align: start;
 }
 
-footer .comments .enviar {
+footer .comments .enviar label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +384,7 @@ footer .comments .enviar {
   margin-top: 30px;
 }
 
-footer .comments .enviar .comentarios {
+footer .comments .enviar label .comentarios {
   width: 300px;
   height: 40px;
   border: solid black 1.5px;
@@ -395,7 +395,7 @@ footer .comments .enviar .comentarios {
   padding: 10px;
 }
 
-footer .comments .enviar .mandar {
+footer .comments .enviar label .mandar {
   width: 100px;
   height: 40px;
   background-color: #dd1070;
@@ -406,7 +406,7 @@ footer .comments .enviar .mandar {
   transition: all 0.5s;
 }
 
-footer .comments .enviar .mandar:hover {
+footer .comments .enviar label .mandar:hover {
   background-color: white;
   color: black;
   border: black solid 1px;
@@ -1011,7 +1011,7 @@ footer .texts div ul .ic-mobile {
 }
 
 @media screen and (max-width: 1080px) {
-  footer, footer .comments .enviar, footer .texts {
+  footer, footer .comments .enviar label, footer .texts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1029,10 +1029,10 @@ footer .texts div ul .ic-mobile {
   footer .comments h4 {
     text-align: center;
   }
-  footer .comments .enviar .comentarios, footer .comments .enviar .mandar {
+  footer .comments .enviar label .comentarios, footer .comments .enviar label .mandar {
     margin: 10px auto;
   }
-  footer .comments .enviar .comentarios {
+  footer .comments .enviar label .comentarios {
     width: 250px;
   }
   footer .texts {
@@ -1390,7 +1390,6 @@ footer .texts div ul .ic-mobile {
 .politica-priv p {
   margin-bottom: 50px;
   line-height: 30px;
-  word-wrap: break-word;
 }
 
 .politica-priv p span {
