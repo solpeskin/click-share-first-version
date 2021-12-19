@@ -1161,6 +1161,11 @@ footer .texts div ul .ic-mobile {
   cursor: pointer;
 }
 
+.centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
 .centro-ayuda .preguntas-destacadas .todas-pregs .preguntas div:hover {
   height: 200px;
 }

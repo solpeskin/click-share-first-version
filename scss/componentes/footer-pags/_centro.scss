@@ -57,6 +57,11 @@
                     transition: all 0.8s ease; 
                     cursor: pointer;
 
+                    p {
+                        margin-bottom: 10px;
+                        line-height: 25px;
+                    }
+
                     &:hover {
                         height: 200px
                     }
