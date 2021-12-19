@@ -192,12 +192,12 @@ header .menu .items-menu li .sublista li {
 
 .boton a {
   text-decoration: none;
-  color: #FF5DA2;
+  color: #cf4f87;
   font-size: 20px;
 }
 
 .boton a:hover {
-  color: #FF0075;
+  color: #dd1070;
 }
 
 #pasos {
@@ -263,7 +263,7 @@ header .menu .items-menu li .sublista li {
 }
 
 #ustedes {
-  background-color: #FF0075;
+  background-color: #dd1070;
 }
 
 #ustedes h2 {
@@ -398,7 +398,7 @@ footer .comments .enviar .comentarios {
 footer .comments .enviar .mandar {
   width: 100px;
   height: 40px;
-  background-color: #FF0075;
+  background-color: #dd1070;
   color: white;
   border: none;
   margin-left: 10px;
@@ -457,7 +457,7 @@ footer .texts div ul li a:hover {
 footer .texts div ul h5 {
   font-size: 17px;
   font-weight: bold;
-  color: #FF0075;
+  color: #dd1070;
 }
 
 footer .texts div ul .ic-mobile {
@@ -507,7 +507,7 @@ footer .texts div ul .ic-mobile {
 }
 
 .is p a:hover {
-  color: #b81a5e;
+  color: #a00c4c;
 }
 
 .is svg {
@@ -584,12 +584,12 @@ footer .texts div ul .ic-mobile {
 }
 
 .boton {
-  color: #FF5DA2;
+  color: #cf4f87;
   font-size: 20px;
 }
 
 .boton:hover {
-  color: #FF0075;
+  color: #dd1070;
 }
 
 @media screen and (max-width: 500px) {
@@ -651,11 +651,11 @@ footer .texts div ul .ic-mobile {
     font-size: 30px;
   }
   #ustedes h2 {
-    background-color: #FF0075;
+    background-color: #dd1070;
     z-index: 3;
   }
   #ustedes .capa {
-    background-color: #FF0075;
+    background-color: #dd1070;
     z-index: 2;
     height: 200px;
     position: -webkit-sticky;
