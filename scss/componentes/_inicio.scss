@@ -6,7 +6,7 @@
     color: white;
 
     /*fondo*/
-    @include background (block, "../src/fotos/neon.jpeg" );
+    @include background (block, "../src/fotos/neon.webp" );
     background-attachment: fixed;
 
     /*textos*/
