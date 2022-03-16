@@ -10,6 +10,8 @@
 
                 &:hover .items-menu {
                     display: block; 
+                    transform: translate(200px);
+                    transition: all 1s;
                 }
                 
                 .items-menu {
