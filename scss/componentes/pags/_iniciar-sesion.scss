@@ -6,14 +6,14 @@
     background-size: cover ;
 
     h1{
-        @include entrada (1.5s);
+        @include entrada (0.7s);
         font-size: $size *5;
         margin: 20px auto 0px auto;
         color: white;
     }
 
     p {
-        @include entrada (1s);
+        @include entrada (0.7s);
         &:hover {
             text-decoration: underline;
         }
@@ -48,7 +48,7 @@
         margin: auto;
 
         input {
-            @include entrada (2.5s);
+            @include entrada (0.8s);
             margin: 10px 0 30px 0;
         }
 
